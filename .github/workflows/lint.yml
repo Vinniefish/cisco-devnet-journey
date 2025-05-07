@@ -1,4 +1,4 @@
-name: Lint Python Code
+name: Python Lint and Format
 
 on:
   push:
@@ -7,10 +7,10 @@ on:
     branches: [main]
 
 jobs:
-  lint:
+  lint-format:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Python
@@ -18,8 +18,13 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: pip install pylint
+      - name: Install tools
+        run: |
+          pip install black pylint
+
+      - name: Run black (format check)
+        run: |
+          black --check .
 
       - name: Run pylint
         run: |
