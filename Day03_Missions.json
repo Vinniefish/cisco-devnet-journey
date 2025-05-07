@@ -1,0 +1,23 @@
+[
+    {
+        "mission_id": 2,
+        "timestamp": "2025-04-26 17:42:14",
+        "commander": "Vincent",
+        "mission_name": "Operation HeadyStorm",
+        "ship_name": "USS InfraMaster"
+    },
+    {
+        "mission_id": 3,
+        "timestamp": "2025-04-26 17:42:51",
+        "commander": "Vincent",
+        "mission_name": "Operation HeadyStorm",
+        "ship_name": "USS InfraMaster"
+    },
+    {
+        "mission_id": 4,
+        "timestamp": "2025-04-26 17:46:00",
+        "commander": "Vincenzo 2",
+        "mission_name": "Operation HeadyStorm",
+        "ship_name": "USS InfraMaster"
+    }
+]
